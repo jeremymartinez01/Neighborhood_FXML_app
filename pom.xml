@@ -115,4 +115,5 @@
             </plugin>
         </plugins>
     </build>
+    <name>PROYECTOPOO2</name>
 </project>
