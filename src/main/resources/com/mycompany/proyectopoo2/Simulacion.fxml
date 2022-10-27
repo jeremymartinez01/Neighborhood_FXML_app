@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectopoo2.SimulacionController">
+   <center>
+      <VBox alignment="BOTTOM_CENTER" prefHeight="600.0" prefWidth="1024.0" spacing="50.0">
+         <children>
+            <ImageView fitHeight="247.0" fitWidth="229.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/LOGO.png" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#Simulacion_Residente" prefHeight="50.0" prefWidth="240.0" text="Residente">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Simulacion_Visitante" prefHeight="50.0" prefWidth="240.0" text="Visitante">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="80.0" />
+         </padding>
+      </VBox>
+   </center>
+   <top>
+      <MenuBar prefHeight="25.0" prefWidth="1027.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Opciones">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#volver" text="Regresar" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

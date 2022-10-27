@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectopoo2.VistaVisitanteSinCodigoController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane prefHeight="302.0" prefWidth="542.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="311.0" minWidth="10.0" prefWidth="255.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="285.0" minWidth="10.0" prefWidth="285.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Ingrese su nombre:">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Bodoni MT" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label text="Ingrese su cédula:" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Bodoni MT" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label text="Ingrese el nombre del residente:" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Bodoni MT" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label text="Ingrese la villa:" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Bodoni MT" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label text="Ingrese la manzana:" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Bodoni MT" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txt_Nombre" alignment="CENTER" prefHeight="37.0" prefWidth="210.0" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Bodoni MT" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txt_Cedula" alignment="CENTER" prefHeight="37.0" prefWidth="210.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Bodoni MT" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txt_Residente" alignment="CENTER" prefHeight="37.0" prefWidth="210.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Bodoni MT" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txt_Villa" alignment="CENTER" prefHeight="37.0" prefWidth="210.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Bodoni MT" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txt_Manzana" alignment="CENTER" prefHeight="37.0" prefWidth="210.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Bodoni MT" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txt_Correo" alignment="CENTER" prefHeight="37.0" prefWidth="210.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Bodoni MT" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label text="Ingrese su correo:" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Bodoni MT" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+            </GridPane>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+            <Menu mnemonicParsing="false" text="Regresar">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Salir" text="Salir" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <VBox alignment="CENTER" prefHeight="64.0" prefWidth="540.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#nuevoVisitante" prefHeight="50.0" prefWidth="162.0" text="Registrar">
+               <font>
+                  <Font name="Bodoni MT" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="600.0" maxWidth="1024.0" minHeight="600.0" minWidth="1024.0" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectopoo2.VistaResidenteController">
+   <top>
+      <MenuBar prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="OPCIONES RESIDENTE">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#mostrarInformacion" text="MI INFORMACION">
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="I" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#mostrarVehiculos" text="MIS VEHICULOS">
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="C" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#mostrarVisitas" text="MIS VISITAS">
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="V" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#Salir" text="SALIR">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="ENTER" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="251.0" fitWidth="301.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/LOGO.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenido" wrappingWidth="379.33740234375">
+               <font>
+                  <Font name="Bodoni MT" size="79.0" />
+               </font>
+            </Text>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>
